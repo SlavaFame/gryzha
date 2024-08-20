@@ -1,0 +1,63 @@
+.header {
+    &-wrap {
+        width: 100%;
+        background-color: var(--white);
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        z-index: 5;
+    }
+}
+
+.top {
+    &-nav {
+        //margin-top: 7rem;
+    }
+    &-info {
+        background-color: $white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 1.5rem auto;
+
+        &-address {
+            order: 1;
+        }
+        
+        &-logo {
+            width: 18.3rem;
+            height: 2.5rem;
+            img {
+                max-width: 100%;
+            }
+        }
+        &-phone {
+            color: $grey;
+            font-size: 1.8rem;
+            line-height: 2rem;
+            display: flex;
+            align-items: center;
+            &:before {
+                content: '';
+                background-size: 1.1rem;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-color: $green;
+                background-image: url("data:image/svg+xml,%3Csvg width='12' height='13' viewBox='0 0 12 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.65373 1.43905C3.48831 1.02348 3.0522 0.802283 2.63542 0.9207L0.744876 1.45693C0.371064 1.56417 0.111115 1.91719 0.111115 2.31936C0.111115 7.84696 4.42069 12.3289 9.73569 12.3289C10.1224 12.3289 10.4618 12.0586 10.5649 11.6698L11.0806 9.70364C11.1944 9.27019 10.9817 8.81663 10.5821 8.64459L8.51973 7.75088C8.16955 7.59895 7.76351 7.70396 7.52505 8.01006L6.65711 9.11156C5.14468 8.36754 3.92013 7.09401 3.20473 5.52108L4.26386 4.62066C4.55818 4.37042 4.65916 3.95038 4.51307 3.58619L3.65373 1.44129V1.43905Z' fill='white'/%3E%3C/svg%3E%0A");
+                width: 2.2rem;
+                height: 2.2rem;
+                margin-right: 1.5rem;
+            }
+            &:hover {
+                &:before {
+                    background-color: $orange;
+                }
+            }
+        }
+        &-btn {
+            width: 18rem;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.btn {
+    &-green,
+    &-orange,
+    &-red {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+    &-green {
+        text-transform: uppercase;
+        background-color: var(--main-green);
+        color: var(--white);
+        &:hover {
+            background-color: var(--orange);
+        }
+    }
+    &-red {
+        text-transform: uppercase;
+        background-color: var(--red);
+        color: var(--white);
+        &:hover {
+            background-color: var(--main-green);
+        }
+    }
+    &-orange {
+        text-transform: uppercase;
+        background-color: var(--orange);
+        color: var(--white);
+        &:hover {
+            background-color: var(--main-green);
+        }
+    }
+}
